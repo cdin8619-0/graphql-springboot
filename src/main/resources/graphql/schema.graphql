@@ -1,0 +1,11 @@
+type Product {
+    id: ID,
+    name: String,
+    Category: String,
+    price: Float,
+    stock: Int
+}
+
+type Query {
+    getProducts: Product
+}
