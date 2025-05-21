@@ -9,3 +9,8 @@ type Product {
 type Query {
     getProducts: Product
 }
+
+type Mutation {
+    updateStock(id:ID, stock:Int):Product
+    receiveNewShipment(id:ID, quantity:Int):Product
+}
